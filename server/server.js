@@ -10,10 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 ///
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000',"https://your-frontend-url.onrender.com"],
     optionsSuccessStatus: 200, // For legacy browser support
   };
-  
   app.use(cors(corsOptions));
 
 ///////////////////Database connecting
