@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 ///
 const corsOptions = {
-    origin: ['http://localhost:3000',"https://your-frontend-url.onrender.com"],
+    origin: ['http://localhost:3000',"https://mernfront-1-qfml.onrender.com"],
     optionsSuccessStatus: 200, // For legacy browser support
   };
   app.use(cors(corsOptions));
