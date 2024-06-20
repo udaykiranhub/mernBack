@@ -36,6 +36,16 @@ var Register=require("./routers/registerrouter");
 
 
 //
+app.get("/",async function(req,res){
+    try{
+
+res.send("Hello i am uday!");
+
+    }
+    catch(err){
+        res.status(500).json({message:"somethind wwent wrong!"});
+    }
+})
 
 app.use("/",Register);
 
