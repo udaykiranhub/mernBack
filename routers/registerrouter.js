@@ -9,7 +9,7 @@ try{
   console.log("data is:",req.body);
     const newStudent = await Student.findOne({ email:email });
 if(newStudent){
-    res.status(500).json({message:"Already Registered!"});
+    res.status(200).json({message:"Already Registered!"});
 }
 else{
     var data=await Student({name,email,age})
